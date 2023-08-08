@@ -1,10 +1,11 @@
 import { Sequelize } from "sequelize-typescript";
 import dotenv from "dotenv";
+import { User } from "./models/User";
 dotenv.config();
 
 // Initialize Sequelize
 export const sequelize = new Sequelize(
-  process.env.MYSQLDB!,
+  process.env.DB_NAME!,
   process.env.DB_USER!,
   process.env.DB_PASSWORD!,
   {
@@ -13,4 +14,5 @@ export const sequelize = new Sequelize(
   }
 );
 
-sequelize.addModels([__dirname + "./model/"]);
+sequelize.addModels([__dirname + "/models/"]);
+//sequelize.addModels([User]);
