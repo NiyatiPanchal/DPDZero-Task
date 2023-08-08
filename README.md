@@ -6,10 +6,10 @@ Welcome to the DPDZero Task! This task aims to provide a robust and scalable bac
 
 <!--ts-->
 
-- [Framework](#Framework)
-- [DatabaseSchema](#Database Schema)
-- [InstructionstoRun](#Instructions to Run)
-- [SetupInstructions](#Setup Instructions)
+- [Framework](##Framework)
+- [Database Schema](##Database-Schema)
+- [Instructions to Run](##Instructions-to-Run)
+- [Setup Instructions](##Setup-Instructions)
 <!--te-->
 
 ## Framework
@@ -128,4 +128,3 @@ npm start
 ```
 
 9. The server should now be running on http://localhost:5000.
-   [Framework](#Framework)
