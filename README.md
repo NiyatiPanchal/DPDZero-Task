@@ -4,25 +4,25 @@ Welcome to the DPDZero Task! This task aims to provide a robust and scalable bac
 
 ## Table of Contents
 
-Framework
-Database Schema
-Instructions to Run
-Setup Instructions
+Framework<br>
+Database Schema<br>
+Instructions to Run<br>
+Setup Instructions<br>
 
 ## Framework
 
 The backend is developed using the following technologies and frameworks:
 
-Node.js: A runtime environment that allows us to run JavaScript on the server side.
-Express.js: A popular web application framework for building APIs and web applications.
-TypeScript: A superset of JavaScript that adds static types and other features to enhance code quality and maintainability.
-Sequelize: A promise-based ORM (Object-Relational Mapping) for Node.js that allows us to interact with the MySQL database using TypeScript.
+- **`Node.js`** : A runtime environment that allows us to run JavaScript on the server side.
+- **`Express.js`** : A popular web application framework for building APIs and web applications.
+- **`TypeScript`** : A superset of JavaScript that adds static types and other features to enhance code quality and maintainability.
+- **`Sequelize`** : A promise-based ORM (Object-Relational Mapping) for Node.js that allows us to interact with the MySQL database using TypeScript.
 
 ## Database Schema
 
 The MySQL database schema includes the following tables:
 
-### Users: Stores user registration information.
+**`Users`** : Stores user registration information.
 
 ```yml
 id (Primary Key, Auto Increment)
@@ -34,7 +34,7 @@ age
 gender
 ```
 
-### Data: Stores key-value pairs for data storage.
+**`Data`** : Stores key-value pairs for data storage.
 
 ```yml
 id (Primary Key, Auto Increment)
@@ -66,7 +66,7 @@ cd DPDZero-Task
 npm install
 ```
 
-5. Create a .env file in the root directory and add the following environment variables:
+5. Create a **`.env`** file in the root directory and add the following environment variables:
 
 ```yml
 DB_HOST=your_database_host
