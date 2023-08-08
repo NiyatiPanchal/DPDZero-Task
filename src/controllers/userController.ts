@@ -14,7 +14,6 @@ export async function registerUser(
 ) {
   try {
     const errors = validationResult(req);
-    console.log(errors);
 
     if (!errors.isEmpty()) {
       const err = errors.array().map((e) => ({

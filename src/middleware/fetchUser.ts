@@ -7,8 +7,6 @@ dotenv.config();
 export const fetchuser = (req: Request, res: Response, next: any) => {
   // Get the user from the jwt token and add id to req object
   const { authorization } = req.headers;
-  // const token = req.header("authorization");
-  // console.log(token);
 
   if (!authorization || !authorization.startsWith("Bearer ")) {
     throw new InvalidInput(
@@ -20,11 +18,9 @@ export const fetchuser = (req: Request, res: Response, next: any) => {
     );
   }
   const token = authorization.replace("Bearer ", "");
-  console.log(token);
 
   try {
     const data = jwt.verify(token, process.env.JWT_SECRET!);
-    console.log("hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh: ", data);
 
     // req.user = data.user;
     next();

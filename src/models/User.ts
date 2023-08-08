@@ -12,10 +12,10 @@ export class User extends Model<User> {
   })
   id?: number;
 
-  @Column(DataType.STRING)
+  @Column({ type: DataType.STRING, unique: true })
   username!: string;
 
-  @Column(DataType.STRING)
+  @Column({ type: DataType.STRING, unique: true })
   email?: string;
 
   @Column(DataType.STRING)

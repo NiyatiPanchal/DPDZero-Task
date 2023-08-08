@@ -12,7 +12,7 @@ export class Data extends Model<Data> {
   })
   id?: number;
 
-  @Column(DataType.STRING)
+  @Column({ type: DataType.STRING, unique: true })
   key!: string;
 
   @Column(DataType.STRING)

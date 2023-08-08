@@ -116,9 +116,15 @@ npm install
 6. Create a .env file in the root directory and add the necessary environment variables (see [Instructions to Run](#instructions-to-run)).
 
 7. Run the database migrations to create the necessary tables:
+   To do that create **`config.json`** file using this command and add db credentials in it.
+   ```yml
+   npx sequelize-cli init
+   ```
+   Now, run this command to create tables in database.
 
 ```yml
-npx sequelize-cli db:migrate
+npx sequelize-cli migration:generate --name create-data
+npx sequelize-cli migration:generate --name create-user
 ```
 
 8. Run the server:
