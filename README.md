@@ -7,9 +7,9 @@ Welcome to the DPDZero Task! This task aims to provide a robust and scalable bac
 <!--ts-->
 
 - [Framework](#framework)
-- [Database Schema](#database-Schema)
-- [Instructions to Run](#instructions-to-Run)
-- [Setup Instructions](#setup-Instructions)
+- [Database Schema](#database-schema)
+- [Instructions to Run](#instructions-to-run)
+- [Setup Instructions](#setup-instructions)
 <!--te-->
 
 # Framework
@@ -113,7 +113,7 @@ cd DPDZero-Task
 npm install
 ```
 
-6. Create a .env file in the root directory and add the necessary environment variables (see Instructions to Run).
+6. Create a .env file in the root directory and add the necessary environment variables (see [Instructions to Run](#instructions-to-run)).
 
 7. Run the database migrations to create the necessary tables:
 
