@@ -37,7 +37,6 @@ export async function addData(req: Request, res: Response, next: NextFunction) {
     // Create the data entry in the database
     await Data.create({ ...req.body });
 
-    // Respond with success message
     return res.status(201).json({
       status: "success",
       message: "Data stored successfully.",

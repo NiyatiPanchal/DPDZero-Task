@@ -13,6 +13,7 @@ import {
 const router = express.Router();
 dotenv.config();
 
+// Register User
 router.post(
   "/register",
   [
@@ -45,6 +46,7 @@ router.post(
   registerUser
 );
 
+// Generate Token
 router.post(
   "/token",
   [
@@ -56,12 +58,16 @@ router.post(
   generateToken
 );
 
+// Add Data
 router.post("/data", fetchuser, addData);
 
+// Fetch Data
 router.get("/data/:key", fetchuser, getData);
 
+// Update Data
 router.put("/data/:key", fetchuser, updateData);
 
+// Delete Data
 router.delete("/data/:key", fetchuser, deleteData);
 
 export default router;

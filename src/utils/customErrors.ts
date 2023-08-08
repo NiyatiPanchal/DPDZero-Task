@@ -1,3 +1,4 @@
+// Custom error handling function
 export class InvalidInput extends Error {
   constructor(
     public messageDetails: { message: string; code: string },

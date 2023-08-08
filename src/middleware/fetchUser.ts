@@ -5,7 +5,7 @@ import { InvalidInput } from "../utils/customErrors";
 dotenv.config();
 
 export const fetchuser = (req: Request, res: Response, next: any) => {
-  // Get the user from the jwt token and add id to req object
+  // User Authorization
   const { authorization } = req.headers;
 
   if (!authorization || !authorization.startsWith("Bearer ")) {
@@ -20,9 +20,8 @@ export const fetchuser = (req: Request, res: Response, next: any) => {
   const token = authorization.replace("Bearer ", "");
 
   try {
+    // Verify User
     const data = jwt.verify(token, process.env.JWT_SECRET!);
-
-    // req.user = data.user;
     next();
   } catch (error) {
     throw new InvalidInput(

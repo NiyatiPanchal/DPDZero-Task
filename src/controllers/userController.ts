@@ -13,6 +13,7 @@ export async function registerUser(
   next: NextFunction
 ) {
   try {
+    // Validation Errors
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
@@ -24,7 +25,6 @@ export async function registerUser(
 
     const { username, email } = req.body;
 
-    //   Check if the username is already taken
     const [existingUsername, existingEmail] = await Promise.all([
       User.findOne({
         where: { username },
@@ -34,6 +34,7 @@ export async function registerUser(
       }),
     ]);
 
+    // Check if the username is already taken
     if (existingUsername) {
       throw new InvalidInput({
         message:
@@ -41,6 +42,8 @@ export async function registerUser(
         code: "USERNAME_EXISTS",
       });
     }
+
+    // Check if the email is already taken
     if (existingEmail) {
       throw new InvalidInput({
         message:
@@ -85,6 +88,7 @@ export async function generateToken(
   next: NextFunction
 ) {
   try {
+    // Validation Errors
     const errors = validationResult(req);
 
     if (!errors.isEmpty()) {
@@ -109,6 +113,7 @@ export async function generateToken(
       });
     }
 
+    // Generate Token
     const authToken = jwt.sign({ username }, process.env.JWT_SECRET!, {
       expiresIn: "1h",
     });

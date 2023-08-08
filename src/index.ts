@@ -11,6 +11,7 @@ import routes from "./routes/auth";
 
 dotenv.config();
 
+// Error Handler
 export class JSONParseError extends SyntaxError {
   status?: number;
 }
@@ -19,7 +20,7 @@ const errorHandler: ErrorRequestHandler = (
   err: any,
   req: Request,
   res: Response,
-  next: NextFunction // don't remove this
+  next: NextFunction
 ) => {
   if ((err as JSONParseError) instanceof SyntaxError) {
     err.httpStatusCode = 400;
