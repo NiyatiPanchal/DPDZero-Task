@@ -6,13 +6,13 @@ Welcome to the DPDZero Task! This task aims to provide a robust and scalable bac
 
 <!--ts-->
 
-- [Framework](##Framework)
-- [Database Schema](##Database-Schema)
-- [Instructions to Run](##Instructions-to-Run)
-- [Setup Instructions](##Setup-Instructions)
+- [Framework](#Framework)
+- [Database Schema](#Database-Schema)
+- [Instructions to Run](#Instructions-to-Run)
+- [Setup Instructions](#Setup-Instructions)
 <!--te-->
 
-## Framework
+# Framework
 
 The backend is developed using the following technologies and frameworks:
 
@@ -21,7 +21,7 @@ The backend is developed using the following technologies and frameworks:
 - **`TypeScript`** : A superset of JavaScript that adds static types and other features to enhance code quality and maintainability.
 - **`Sequelize`** : A promise-based ORM (Object-Relational Mapping) for Node.js that allows us to interact with the MySQL database using TypeScript.
 
-## Database Schema
+# Database Schema
 
 The MySQL database schema includes the following tables:
 
@@ -45,7 +45,7 @@ key
 value
 ```
 
-## Instructions to Run
+# Instructions to Run
 
 To run the code locally, follow these steps:
 
@@ -87,7 +87,7 @@ npm start
 
 7. The server should now be running on http://localhost:5000.
 
-## Setup Instructions
+# Setup Instructions
 
 Follow these instructions to set up the project from scratch:
 
