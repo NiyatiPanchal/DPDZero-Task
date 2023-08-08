@@ -24,6 +24,7 @@ The MySQL database schema includes the following tables:
 
 ### Users: Stores user registration information.
 
+```yml
 id (Primary Key, Auto Increment)
 username
 email
@@ -31,12 +32,15 @@ password
 full_name
 age
 gender
+```
 
 ### Data: Stores key-value pairs for data storage.
 
+```yml
 id (Primary Key, Auto Increment)
 key
 value
+```
 
 ## Instructions to Run
 
@@ -45,24 +49,38 @@ To run the code locally, follow these steps:
 1. Make sure you have Node.js and MySQL installed on your machine.
 
 2. Clone this repository:
-   git clone https://github.com/NiyatiPanchal/DPDZero-Task.git
+
+```yml
+git clone https://github.com/NiyatiPanchal/DPDZero-Task.git
+```
 
 3. Navigate to the project directory:
-   cd DPDZero-Task
+
+```yml
+cd DPDZero-Task
+```
 
 4. Install dependencies using npm or yarn:
-   npm install
+
+```yml
+npm install
+```
 
 5. Create a .env file in the root directory and add the following environment variables:
 
+```yml
 DB_HOST=your_database_host
 DB_USER=your_database_username
 DB_PASSWORD=your_database_password
 DB_NAME=your_database_name
 PORT=5000
+```
 
 6. Run the server:
-   npm start
+
+```yml
+npm start
+```
 
 7. The server should now be running on http://localhost:5000.
 
@@ -75,20 +93,35 @@ Follow these instructions to set up the project from scratch:
 2. Create a new MySQL database with the name specified in your .env file.
 
 3. Clone this repository:
-   git clone https://github.com/NiyatiPanchal/DPDZero-Task.git
+
+```yml
+git clone https://github.com/NiyatiPanchal/DPDZero-Task.git
+```
 
 4. Navigate to the project directory:
-   cd DPDZero-Task
+
+```yml
+cd DPDZero-Task
+```
 
 5. Install dependencies using npm or yarn:
-   npm install
+
+```yml
+npm install
+```
 
 6. Create a .env file in the root directory and add the necessary environment variables (see Instructions to Run).
 
 7. Run the database migrations to create the necessary tables:
-   npx sequelize-cli db:migrate
+
+```yml
+npx sequelize-cli db:migrate
+```
 
 8. Run the server:
-   npm start
+
+```yml
+npm start
+```
 
 9. The server should now be running on http://localhost:5000.
