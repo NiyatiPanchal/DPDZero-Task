@@ -6,10 +6,10 @@ Welcome to the DPDZero Task! This task aims to provide a robust and scalable bac
 
 <!--ts-->
 
-- [Framework](#Framework)
-- [Database Schema](#Database-Schema)
-- [Instructions to Run](#Instructions-to-Run)
-- [Setup Instructions](#Setup-Instructions)
+- [Framework](#framework)
+- [Database Schema](#database-Schema)
+- [Instructions to Run](#instructions-to-Run)
+- [Setup Instructions](#setup-Instructions)
 <!--te-->
 
 # Framework
